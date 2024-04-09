@@ -8,7 +8,7 @@ class MainPageLocators:
 class LoginPageLocators:
     LOGIN_MAIL_INPUT = (By.CSS_SELECTOR, "#id_login-username")
     LOGIN_PASSWORD_INPUT = (By.CSS_SELECTOR, "#id_login-password")
-    FORGOT_PASSWORD_BUTTON = (By.CSS_SELECTOR, '[href="/ru/password-reset/"]')
+    FORGOT_PASSWORD_BUTTON = (By.CSS_SELECTOR, '[href="/en-gb/password-reset/"]')
     LOGIN_SUBMIT_BUTTON = (By.CSS_SELECTOR, '[name="login_submit"]')
 
     REGISTRATION_EMAIL_INPUT = (By.CSS_SELECTOR, '#id_registration-email')
