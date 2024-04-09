@@ -33,4 +33,4 @@ class ProductPage(BasePage):
         product_message = self.browser.find_element(*ProductPageLocators.MESSAGE_WITH_PRODUCT_IN_CART)
         product_message_text = product_message.text
 
-        assert product_name_text in product_message_text
+        assert product_name_text == product_message_text

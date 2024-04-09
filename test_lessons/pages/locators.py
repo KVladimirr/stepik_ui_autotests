@@ -22,5 +22,5 @@ class ProductPageLocators:
     PRODUCT_PRICE = (By.CSS_SELECTOR, '.col-sm-6.product_main .price_color')
     MESSAGE_WITH_CART_PRICE = (By.CSS_SELECTOR, '.alert.alert-safe.alert-noicon.alert-info.fade.in')
     CART_PRICE = (By.CSS_SELECTOR, '.alert.alert-safe.alert-noicon.alert-info.fade.in .alertinner p:first-child strong')
-    MESSAGE_WITH_PRODUCT_IN_CART = (By.CSS_SELECTOR, '#messages div:first-child div')
+    MESSAGE_WITH_PRODUCT_IN_CART = (By.CSS_SELECTOR, '#messages div:first-child div strong')
     PRODUCT_NAME = (By.CSS_SELECTOR, '.col-sm-6.product_main h1')
