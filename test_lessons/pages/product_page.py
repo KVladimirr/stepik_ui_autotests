@@ -34,3 +34,11 @@ class ProductPage(BasePage):
         product_message_text = product_message.text
 
         assert product_name_text == product_message_text
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.MESSAGE_WITH_PRODUCT_IN_CART), \
+            "Success message is presented, but should not be"
+
+    def element_should_disappear(self):
+        assert self.is_disappeared(*ProductPageLocators.MESSAGE_WITH_PRODUCT_IN_CART, timeout=4), \
+            "Element does not disappear"
